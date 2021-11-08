@@ -14,5 +14,6 @@ public class App
         ApplicationContext factory = new AnnotationConfigApplicationContext(AppConfig.class);
         Car mehran = factory.getBean("car", Car.class);
         mehran.drive();
+        System.out.println(mehran.toString());
     }
 }

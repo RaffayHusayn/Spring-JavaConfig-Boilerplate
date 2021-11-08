@@ -11,7 +11,11 @@ public class AppConfig {
 
     @Bean
     public Car car(){
-        return new Car("toyota", "camry", 2020);
+        return new Car("toyota", "camry", 2020, engine());
+    }
+    @Bean
+    public Engine engine(){
+        return new Engine("boeing", 1000);
     }
 
 }
