@@ -1,12 +1,10 @@
 package com.fclass;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.*;
 
 @Configuration
 @ComponentScan("com.fclass")
+@PropertySource("car-info.properties")
 public class AppConfig {
 
     @Bean
