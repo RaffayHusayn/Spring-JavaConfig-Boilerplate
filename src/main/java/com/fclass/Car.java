@@ -9,12 +9,15 @@ public class Car implements Vehicle{
     String type;
     int year;
     Engine engine;
-    @Autowired
-    public Car(String n, String t, int y , Engine e){
+    public void setEngine(Engine e){
+
+        this.engine = e;
+        System.out.println("ENGINE SETTER CALLED");
+    }
+    public Car(String n, String t, int y ){
         this.name = n;
         this.type = t;
         this.year = y;
-        this.engine = e;
         System.out.println("3 argument constructor called");
     }
     @Override

@@ -11,11 +11,13 @@ public class AppConfig {
 
     @Bean
     public Car car(){
-        return new Car("toyota", "camry", 2020, engine());
+        Car car =  new Car("toyota", "camry", 2020);
+        car.setEngine(engine());
+        return car;
     }
     @Bean
     public Engine engine(){
-        return new Engine("boeing", 1000);
+        return new Engine();
     }
 
 }
