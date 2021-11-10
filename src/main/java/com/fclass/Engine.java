@@ -3,9 +3,9 @@ package com.fclass;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Engine {
-    @Value("Some comnay")
+    @Value("${engine.Company}")
     String company;
-    @Value("10000000")
+    @Value("${engine.Horsepower}")
     int horsePower;
 
 //    public Engine(String c, int hp){

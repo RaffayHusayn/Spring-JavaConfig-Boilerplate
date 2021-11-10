@@ -8,7 +8,9 @@ public class Car implements Vehicle{
 
     @Value("${car.Name}")
     String name;
+    @Value("${car.Type}")
     String type;
+    @Value("${car.Year}")
     int year;
     Engine engine;
     public void setEngine(Engine e){
