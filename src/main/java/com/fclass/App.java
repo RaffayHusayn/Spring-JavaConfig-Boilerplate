@@ -15,5 +15,8 @@ public class App
         Car mehran = factory.getBean("car", Car.class);
         mehran.drive();
         System.out.println(mehran.toString());
+        System.out.println(";;;;;;;;;;;;;;;");
+        Bike honda = factory.getBean("bike", Bike.class);
+
     }
 }

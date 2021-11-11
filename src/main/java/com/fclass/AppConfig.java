@@ -17,5 +17,9 @@ public class AppConfig {
     public Engine engine(){
         return new Engine();
     }
-
+    @Bean
+    @Scope("prototype") //constructor is not called when IoC is made, but when the Bean is called
+    public Bike bike(){
+        return new Bike("honda");
+    }
 }
